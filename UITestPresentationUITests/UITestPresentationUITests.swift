@@ -7,17 +7,19 @@
 //
 
 import XCTest
+@testable import UITestPresentation
 
 class UITestPresentationUITests: XCTestCase {
 
+//	var sut: ViewController!
+	var app: XCUIApplication!
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+//        sut = ViewController(nibName: nil, bundle: nil)
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
+        app = XCUIApplication()
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
@@ -27,8 +29,25 @@ class UITestPresentationUITests: XCTestCase {
     }
 
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+		
+		app.launch()
+		let titletextfieldTextField = app.textFields["titleTextField"]
+		titletextfieldTextField.tap()
+//		titletextfieldTextField.typeText("Test")
+		let tKey = app.keys["T"]
+		tKey.tap()
+		let eKey = app.keys["e"]
+		eKey.tap()
+		let sKey = app.keys["s"]
+		sKey.tap()
+		let tKey2 = app.keys["t"]
+		tKey2.tap()
+		
+		let button = app.buttons["button"]
+		button.tap()
+		let text = app.staticTexts["Test"]
+		XCTAssert(text.exists)
+		
     }
 
 }
