@@ -10,77 +10,180 @@ import UIKit
 
 class ViewController: UIViewController {
 	
-	lazy var titleTextField: UITextField = {
+	private(set) lazy var value1TextField: UITextField = {
 		let field = UITextField()
 		field.translatesAutoresizingMaskIntoConstraints = false
-		field.accessibilityIdentifier = "titleTextField"
-		field.accessibilityLabel = "Insira um novo titulo"
+		field.accessibilityIdentifier = "value1TextField"
 		field.borderStyle = .roundedRect
 		return field
 	}()
+
+  private(set) lazy var value2TextField: UITextField = {
+    let field = UITextField()
+    field.translatesAutoresizingMaskIntoConstraints = false
+    field.accessibilityIdentifier = "value2TextField"
+    field.borderStyle = .roundedRect
+    return field
+  }()
 	
-	lazy var titleLabel: UILabel = {
+	private(set) lazy var symbolLabel: UILabel = {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.textAlignment = .center
-		label.accessibilityIdentifier = "titleLabel"
-		label.text = "Titulo padrão"
+		label.accessibilityIdentifier = "symbolLabel"
 		return label
 	}()
+
+  private(set) lazy var equalLabel: UILabel = {
+    let label = UILabel()
+    label.translatesAutoresizingMaskIntoConstraints = false
+    label.textAlignment = .center
+    label.accessibilityIdentifier = "equalLabel"
+    label.text = "="
+    return label
+  }()
+
+  private(set) lazy var resultLabel: UILabel = {
+    let label = UILabel()
+    label.translatesAutoresizingMaskIntoConstraints = false
+    label.textAlignment = .center
+    label.accessibilityIdentifier = "resultLabel"
+    return label
+  }()
 	
-	lazy var button: UIButton = {
+	private(set) lazy var button: UIButton = {
 		let button = UIButton()
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.addTarget(self, action: #selector(action), for: UIControl.Event.touchUpInside)
 		button.accessibilityIdentifier = "button"
-		button.accessibilityLabel = "Botão para trocar o titulo"
-		button.setTitle("Alterar título", for: .normal)
+		button.setTitle("Calcular", for: .normal)
 		button.setTitleColor(UIColor.white, for: .normal)
 		button.backgroundColor = .darkGray
+    button.layer.cornerRadius = 4
+    button.clipsToBounds = true
 		return button
 	}()
+
+  private(set) lazy var fieldsStackView: UIStackView = {
+    let stackView = UIStackView()
+    stackView.translatesAutoresizingMaskIntoConstraints = false
+    stackView.axis = .horizontal
+    stackView.distribution = .fillEqually
+    stackView.spacing = 20
+    return stackView
+  }()
+
+  private(set) lazy var operationsStackView: UIStackView = {
+    let stackView = UIStackView()
+    stackView.translatesAutoresizingMaskIntoConstraints = false
+    stackView.axis = .horizontal
+    stackView.distribution = .fillEqually
+    stackView.spacing = 20
+    return stackView
+  }()
+
+  let mathOperation = MathOperation()
+  var currentOperation: OperationType?
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		view.addSubview(titleLabel)
-		view.addSubview(titleTextField)
+		view.addSubview(fieldsStackView)
+    fieldsStackView.addArrangedSubview(value1TextField)
+    fieldsStackView.addArrangedSubview(symbolLabel)
+    fieldsStackView.addArrangedSubview(value2TextField)
+    fieldsStackView.addArrangedSubview(equalLabel)
+    fieldsStackView.addArrangedSubview(resultLabel)
+    view.addSubview(operationsStackView)
 		view.addSubview(button)
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
 		setupConstraints()
+    addOperationsButton()
 	}
 
 	@objc func action() {
-		titleLabel.text = titleTextField.text
+    guard let operation = currentOperation else {
+      alert(with: .symbolError)
+      return
+    }
+    guard let value1String = value1TextField.text else {
+      alert(with: .valueError)
+      return
+    }
+    guard let value2String = value2TextField.text else {
+      alert(with: .valueError)
+      return
+    }
+    guard let value1 = Double(value1String) else {
+      alert(with: .unknown)
+      return
+    }
+    guard let value2 = Double(value2String) else {
+      alert(with: .unknown)
+      return
+    }
+
+    let result = mathOperation.result(operation: operation, value1: value1, value2: value2)
+    resultLabel.text = String(result)
 	}
+
+  @objc func operationAction(_ button: OperationButton) {
+    currentOperation = button.operationType
+    symbolLabel.text = button.operationType.rawValue
+  }
+
+  private func addOperationsButton() {
+    for operation in OperationType.allCases {
+      let button = OperationButton(operationType: operation)
+      button.translatesAutoresizingMaskIntoConstraints = false
+      button.setTitle(operation.rawValue, for: .normal)
+      button.accessibilityLabel = "Operação: \(operation.rawValue)"
+      button.accessibilityIdentifier = "op_\(operation.rawValue)"
+      button.addTarget(self, action: #selector(operationAction(_:)), for: .touchUpInside)
+      operationsStackView.addArrangedSubview(button)
+    }
+  }
+
+  private func alert(with message: ErrorMessage) {
+    let alert = UIAlertController(title: "Ops", message: message.rawValue, preferredStyle: .alert)
+    let action = UIAlertAction(title: "Ok", style: .destructive, handler: nil)
+    alert.addAction(action)
+    present(alert, animated: true, completion: nil)
+  }
 	
-	func setupConstraints() {
-		NSLayoutConstraint.activate([
-			titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
-			titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-			titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
-			titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24)
-			])
-		
-		NSLayoutConstraint.activate([
-			titleTextField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
-			titleTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-			titleTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
-			titleTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24)
-			])
+	private func setupConstraints() {
+    NSLayoutConstraint.activate([
+      fieldsStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
+      fieldsStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+      fieldsStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
+      fieldsStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
+      fieldsStackView.heightAnchor.constraint(equalToConstant: 40)
+      ])
+
+    NSLayoutConstraint.activate([
+      operationsStackView.topAnchor.constraint(equalTo: value1TextField.bottomAnchor, constant: 20),
+      operationsStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+      operationsStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
+      operationsStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
+      operationsStackView.heightAnchor.constraint(equalToConstant: 40)
+      ])
 		
 		NSLayoutConstraint.activate([
 			button.heightAnchor.constraint(equalToConstant: 40),
 			button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 			button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
 			button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
-			button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40)
-//			button.topAnchor.constraint(equalTo: titleTextField.bottomAnchor, constant: 40)
+      button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40)
+//      button.topAnchor.constraint(equalTo: operationsStackView.bottomAnchor, constant: 40)
 			])
-		
 	}
 }
 
+enum ErrorMessage: String {
+  case symbolError = "Escolha a operação que deseja realiar"
+  case valueError = "Digite os valores corretamente"
+  case unknown = "Algo de errado não está certo"
+}

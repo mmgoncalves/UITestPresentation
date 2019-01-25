@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		745F421321F33DEA00C9EAB8 /* MathOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F421221F33DEA00C9EAB8 /* MathOperation.swift */; };
+		745F421521F34AE000C9EAB8 /* OperationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F421421F34AE000C9EAB8 /* OperationButton.swift */; };
+		745F421721F5204300C9EAB8 /* MathOperationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F421621F5204300C9EAB8 /* MathOperationSpec.swift */; };
+		745F421921F522A600C9EAB8 /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F421821F522A600C9EAB8 /* ViewControllerSpec.swift */; };
 		C30073BC21F1538800AD757E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30073BB21F1538800AD757E /* AppDelegate.swift */; };
 		C30073BE21F1538800AD757E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30073BD21F1538800AD757E /* ViewController.swift */; };
 		C30073C121F1538800AD757E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30073BF21F1538800AD757E /* Main.storyboard */; };
 		C30073C321F1538A00AD757E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30073C221F1538A00AD757E /* Assets.xcassets */; };
 		C30073C621F1538A00AD757E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30073C421F1538A00AD757E /* LaunchScreen.storyboard */; };
-		C30073D121F1538A00AD757E /* UITestPresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30073D021F1538A00AD757E /* UITestPresentationTests.swift */; };
 		C30073DC21F1538A00AD757E /* UITestPresentationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30073DB21F1538A00AD757E /* UITestPresentationUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		745F421221F33DEA00C9EAB8 /* MathOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathOperation.swift; sourceTree = "<group>"; };
+		745F421421F34AE000C9EAB8 /* OperationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationButton.swift; sourceTree = "<group>"; };
+		745F421621F5204300C9EAB8 /* MathOperationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathOperationSpec.swift; sourceTree = "<group>"; };
+		745F421821F522A600C9EAB8 /* ViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
 		C30073B821F1538800AD757E /* UITestPresentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITestPresentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30073BB21F1538800AD757E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C30073BD21F1538800AD757E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +49,6 @@
 		C30073C521F1538A00AD757E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C30073C721F1538A00AD757E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C30073CC21F1538A00AD757E /* UITestPresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestPresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C30073D021F1538A00AD757E /* UITestPresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestPresentationTests.swift; sourceTree = "<group>"; };
 		C30073D221F1538A00AD757E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C30073D721F1538A00AD757E /* UITestPresentationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestPresentationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30073DB21F1538A00AD757E /* UITestPresentationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestPresentationUITests.swift; sourceTree = "<group>"; };
@@ -99,10 +105,12 @@
 			children = (
 				C30073BB21F1538800AD757E /* AppDelegate.swift */,
 				C30073BD21F1538800AD757E /* ViewController.swift */,
+				745F421421F34AE000C9EAB8 /* OperationButton.swift */,
 				C30073BF21F1538800AD757E /* Main.storyboard */,
 				C30073C221F1538A00AD757E /* Assets.xcassets */,
 				C30073C421F1538A00AD757E /* LaunchScreen.storyboard */,
 				C30073C721F1538A00AD757E /* Info.plist */,
+				745F421221F33DEA00C9EAB8 /* MathOperation.swift */,
 			);
 			path = UITestPresentation;
 			sourceTree = "<group>";
@@ -110,7 +118,8 @@
 		C30073CF21F1538A00AD757E /* UITestPresentationTests */ = {
 			isa = PBXGroup;
 			children = (
-				C30073D021F1538A00AD757E /* UITestPresentationTests.swift */,
+				745F421621F5204300C9EAB8 /* MathOperationSpec.swift */,
+				745F421821F522A600C9EAB8 /* ViewControllerSpec.swift */,
 				C30073D221F1538A00AD757E /* Info.plist */,
 			);
 			path = UITestPresentationTests;
@@ -257,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30073BE21F1538800AD757E /* ViewController.swift in Sources */,
+				745F421321F33DEA00C9EAB8 /* MathOperation.swift in Sources */,
+				745F421521F34AE000C9EAB8 /* OperationButton.swift in Sources */,
 				C30073BC21F1538800AD757E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C30073D121F1538A00AD757E /* UITestPresentationTests.swift in Sources */,
+				745F421721F5204300C9EAB8 /* MathOperationSpec.swift in Sources */,
+				745F421921F522A600C9EAB8 /* ViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
