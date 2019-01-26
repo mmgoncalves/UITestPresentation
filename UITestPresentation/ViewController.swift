@@ -81,6 +81,13 @@ class ViewController: UIViewController {
     stackView.spacing = 20
     return stackView
   }()
+	
+	private(set) lazy var errorAlert: UIAlertController = {
+		let alert = UIAlertController(title: "Ops", message: "", preferredStyle: .alert)
+		let action = UIAlertAction(title: "Ok", style: .destructive, handler: nil)
+		alert.addAction(action)
+		return alert
+	}()
 
   let mathOperation = MathOperation()
   var currentOperation: OperationType?
@@ -89,12 +96,12 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		
 		view.addSubview(fieldsStackView)
-    fieldsStackView.addArrangedSubview(value1TextField)
-    fieldsStackView.addArrangedSubview(symbolLabel)
-    fieldsStackView.addArrangedSubview(value2TextField)
-    fieldsStackView.addArrangedSubview(equalLabel)
-    fieldsStackView.addArrangedSubview(resultLabel)
-    view.addSubview(operationsStackView)
+		fieldsStackView.addArrangedSubview(value1TextField)
+		fieldsStackView.addArrangedSubview(symbolLabel)
+		fieldsStackView.addArrangedSubview(value2TextField)
+		fieldsStackView.addArrangedSubview(equalLabel)
+		fieldsStackView.addArrangedSubview(resultLabel)
+		view.addSubview(operationsStackView)
 		view.addSubview(button)
 	}
 	
@@ -148,10 +155,8 @@ class ViewController: UIViewController {
   }
 
   private func alert(with message: ErrorMessage) {
-    let alert = UIAlertController(title: "Ops", message: message.rawValue, preferredStyle: .alert)
-    let action = UIAlertAction(title: "Ok", style: .destructive, handler: nil)
-    alert.addAction(action)
-    present(alert, animated: true, completion: nil)
+	errorAlert.message = message.rawValue
+    present(errorAlert, animated: true, completion: nil)
   }
 	
 	private func setupConstraints() {
@@ -176,8 +181,8 @@ class ViewController: UIViewController {
 			button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 			button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
 			button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
-      button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40)
-//      button.topAnchor.constraint(equalTo: operationsStackView.bottomAnchor, constant: 40)
+//      		button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40)
+      button.topAnchor.constraint(equalTo: operationsStackView.bottomAnchor, constant: 40)
 			])
 	}
 }

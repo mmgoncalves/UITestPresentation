@@ -15,6 +15,7 @@ final class ViewControllerSpec: XCTestCase {
 
   override func setUp() {
     sut = ViewController(nibName: nil, bundle: nil)
+	UIApplication.shared.delegate?.window??.rootViewController = sut
   }
 
   func testOperationButton() {
@@ -44,7 +45,6 @@ final class ViewControllerSpec: XCTestCase {
     let op = OperationType.division
     sut.currentOperation = op
     sut.action()
-    XCTAssert(sut.presentedViewController)
+    XCTAssert(sut.errorAlert.isBeingPresented)
   }
-
 }
