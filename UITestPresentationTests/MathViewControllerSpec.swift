@@ -9,12 +9,12 @@
 import XCTest
 @testable import UITestPresentation
 
-final class ViewControllerSpec: XCTestCase {
+final class MathViewControllerSpec: XCTestCase {
 
-  var sut: ViewController!
+  var sut: MathViewController!
 
   override func setUp() {
-    sut = ViewController(nibName: nil, bundle: nil)
+    sut = MathViewController()
 	UIApplication.shared.delegate?.window??.rootViewController = sut
   }
 
