@@ -24,8 +24,15 @@ class MainTabBar: UITabBarController {
 	}
 	
 	private func setup() {
+		let mathItem = UITabBarItem(tabBarSystemItem: UITabBarItem.SystemItem.featured, tag: 0)
 		let mathViewController = MathViewController()
-		mathViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarItem.SystemItem.more, tag: 0)
-		viewControllers = [mathViewController]
+		mathViewController.tabBarItem = mathItem
+		
+		let profileItem = UITabBarItem(tabBarSystemItem: UITabBarItem.SystemItem.more, tag: 1)
+		let profileViewController = ProfileViewController()
+		profileViewController.tabBarItem = profileItem
+		let profileNavigation = UINavigationController(rootViewController: profileViewController)
+		
+		viewControllers = [mathViewController, profileNavigation]
 	}
 }

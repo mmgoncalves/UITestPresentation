@@ -20,6 +20,11 @@
 		C30073C621F1538A00AD757E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30073C421F1538A00AD757E /* LaunchScreen.storyboard */; };
 		C30073DC21F1538A00AD757E /* UITestPresentationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30073DB21F1538A00AD757E /* UITestPresentationUITests.swift */; };
 		C3B9464C22062D95008C234F /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B9464B22062D95008C234F /* MainTabBar.swift */; };
+		C3BAEDC122073B2F0060F30D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC022073B2F0060F30D /* ProfileViewController.swift */; };
+		C3BAEDC3220740A40060F30D /* ProfileCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC2220740A40060F30D /* ProfileCell1.swift */; };
+		C3BAEDC522074F7E0060F30D /* ProfileCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC422074F7D0060F30D /* ProfileCell2.swift */; };
+		C3BAEDC722076AF70060F30D /* ChangeUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC622076AF70060F30D /* ChangeUsernameViewController.swift */; };
+		C3BAEDC922076C300060F30D /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC822076C300060F30D /* ChangePasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +69,11 @@
 		C30073DB21F1538A00AD757E /* UITestPresentationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestPresentationUITests.swift; sourceTree = "<group>"; };
 		C30073DD21F1538A00AD757E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B9464B22062D95008C234F /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		C3BAEDC022073B2F0060F30D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C3BAEDC2220740A40060F30D /* ProfileCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell1.swift; sourceTree = "<group>"; };
+		C3BAEDC422074F7D0060F30D /* ProfileCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell2.swift; sourceTree = "<group>"; };
+		C3BAEDC622076AF70060F30D /* ChangeUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUsernameViewController.swift; sourceTree = "<group>"; };
+		C3BAEDC822076C300060F30D /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		E0B361EEE3B0B94AA39751AC /* Pods-UITestPresentationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationUITests/Pods-UITestPresentationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +182,7 @@
 		C3B94647220609BF008C234F /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C3BAEDBF22073B120060F30D /* Profile */,
 				C3B94648220609CA008C234F /* Math */,
 			);
 			path = Features;
@@ -204,6 +215,18 @@
 				C3B9464B22062D95008C234F /* MainTabBar.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		C3BAEDBF22073B120060F30D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C3BAEDC022073B2F0060F30D /* ProfileViewController.swift */,
+				C3BAEDC822076C300060F30D /* ChangePasswordViewController.swift */,
+				C3BAEDC2220740A40060F30D /* ProfileCell1.swift */,
+				C3BAEDC422074F7D0060F30D /* ProfileCell2.swift */,
+				C3BAEDC622076AF70060F30D /* ChangeUsernameViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,10 +453,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3BAEDC522074F7E0060F30D /* ProfileCell2.swift in Sources */,
+				C3BAEDC122073B2F0060F30D /* ProfileViewController.swift in Sources */,
 				C30073BE21F1538800AD757E /* MathViewController.swift in Sources */,
+				C3BAEDC922076C300060F30D /* ChangePasswordViewController.swift in Sources */,
 				745F421321F33DEA00C9EAB8 /* MathOperation.swift in Sources */,
 				745F421521F34AE000C9EAB8 /* OperationButton.swift in Sources */,
 				C3B9464C22062D95008C234F /* MainTabBar.swift in Sources */,
+				C3BAEDC3220740A40060F30D /* ProfileCell1.swift in Sources */,
+				C3BAEDC722076AF70060F30D /* ChangeUsernameViewController.swift in Sources */,
 				C30073BC21F1538800AD757E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
