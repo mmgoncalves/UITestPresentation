@@ -13,5 +13,6 @@ class ChangeUsernameViewController: UIViewController {
 		super.viewDidLoad()
 		title = "Change Username"
 		view.backgroundColor = UIColor.red
+		self.accessibilityLabel = title
 	}
 }
