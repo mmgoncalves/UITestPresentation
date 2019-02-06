@@ -12,6 +12,8 @@
 		745F421521F34AE000C9EAB8 /* OperationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F421421F34AE000C9EAB8 /* OperationButton.swift */; };
 		745F421721F5204300C9EAB8 /* MathOperationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F421621F5204300C9EAB8 /* MathOperationSpec.swift */; };
 		745F421921F522A600C9EAB8 /* MathViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F421821F522A600C9EAB8 /* MathViewControllerSpec.swift */; };
+		74DF7CE9220B7D4000D7C0F3 /* ProfileViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF7CE8220B7D4000D7C0F3 /* ProfileViewControllerSpec.swift */; };
+		74DF7CF2220B897A00D7C0F3 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF7CF1220B897A00D7C0F3 /* XCTestCase+Extensions.swift */; };
 		7F86FD155EB8A917A2DD4689 /* Pods_UITestPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720B090785C11EB25181EB17 /* Pods_UITestPresentation.framework */; };
 		92594AEC36805EB0E78FD915 /* Pods_UITestPresentationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D04911B2CE4163A10190E9 /* Pods_UITestPresentationTests.framework */; };
 		C30073BC21F1538800AD757E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30073BB21F1538800AD757E /* AppDelegate.swift */; };
@@ -21,15 +23,19 @@
 		C30073DC21F1538A00AD757E /* UITestPresentationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30073DB21F1538A00AD757E /* UITestPresentationUITests.swift */; };
 		C3B9464C22062D95008C234F /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B9464B22062D95008C234F /* MainTabBar.swift */; };
 		C3BAEDC122073B2F0060F30D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC022073B2F0060F30D /* ProfileViewController.swift */; };
-		C3BAEDC3220740A40060F30D /* ProfileCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC2220740A40060F30D /* ProfileCell1.swift */; };
-		C3BAEDC522074F7E0060F30D /* ProfileCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC422074F7D0060F30D /* ProfileCell2.swift */; };
 		C3BAEDC722076AF70060F30D /* ChangeUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC622076AF70060F30D /* ChangeUsernameViewController.swift */; };
 		C3BAEDC922076C300060F30D /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC822076C300060F30D /* ChangePasswordViewController.swift */; };
-		C3F19B97220919C80058CEDE /* KIFTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F19B96220919C80058CEDE /* KIFTarget.swift */; };
-		C3F386CC220A6E8500ED9E8F /* Pods_KIFTarget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F386CB220A6E8500ED9E8F /* Pods_KIFTarget.framework */; };
+		CC376577A12C48805FAAC62C /* Pods_UITestPresentationKIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0823F1BCEE1F88B2FF0C6C7 /* Pods_UITestPresentationKIFTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		74DF7CEB220B7D4000D7C0F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30073B021F1538800AD757E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30073B721F1538800AD757E;
+			remoteInfo = UITestPresentation;
+		};
 		C30073CD21F1538A00AD757E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C30073B021F1538800AD757E /* Project object */;
@@ -44,27 +50,24 @@
 			remoteGlobalIDString = C30073B721F1538800AD757E;
 			remoteInfo = UITestPresentation;
 		};
-		C3F19B99220919C80058CEDE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C30073B021F1538800AD757E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C30073B721F1538800AD757E;
-			remoteInfo = UITestPresentation;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13430DB9D686EB9DB5DEA173 /* Pods-UITestPresentationKIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationKIFTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationKIFTests/Pods-UITestPresentationKIFTests.release.xcconfig"; sourceTree = "<group>"; };
 		1465F948720FEF0F53EB47E0 /* Pods_UITestPresentationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITestPresentationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27520E63C4DCC2CF8C87FE2A /* Pods-UITestPresentationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationUITests/Pods-UITestPresentationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		49D04911B2CE4163A10190E9 /* Pods_UITestPresentationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITestPresentationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		597F235B6D79DBF97240B7CA /* Pods-KIFTarget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIFTarget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIFTarget/Pods-KIFTarget.debug.xcconfig"; sourceTree = "<group>"; };
 		5BFC6C3D8565F8230F564A84 /* Pods-UITestPresentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentation.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentation/Pods-UITestPresentation.release.xcconfig"; sourceTree = "<group>"; };
-		66A2DF3E9B1A2C28E3062ACE /* Pods-KIFTarget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIFTarget.release.xcconfig"; path = "Pods/Target Support Files/Pods-KIFTarget/Pods-KIFTarget.release.xcconfig"; sourceTree = "<group>"; };
 		720B090785C11EB25181EB17 /* Pods_UITestPresentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITestPresentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		745F421221F33DEA00C9EAB8 /* MathOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathOperation.swift; sourceTree = "<group>"; };
 		745F421421F34AE000C9EAB8 /* OperationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationButton.swift; sourceTree = "<group>"; };
 		745F421621F5204300C9EAB8 /* MathOperationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathOperationSpec.swift; sourceTree = "<group>"; };
 		745F421821F522A600C9EAB8 /* MathViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathViewControllerSpec.swift; sourceTree = "<group>"; };
+		74DF7CE6220B7D4000D7C0F3 /* UITestPresentationKIFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestPresentationKIFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DF7CE8220B7D4000D7C0F3 /* ProfileViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerSpec.swift; sourceTree = "<group>"; };
+		74DF7CEA220B7D4000D7C0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DF7CF0220B7D7000D7C0F3 /* UITestPresentationKIFTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITestPresentationKIFTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		74DF7CF1220B897A00D7C0F3 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		7661B83B62E0E8512DE449F1 /* Pods-UITestPresentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentation/Pods-UITestPresentation.debug.xcconfig"; sourceTree = "<group>"; };
 		AD7108BD5180285B5CEA39EE /* Pods-UITestPresentationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationTests/Pods-UITestPresentationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF99A1C5074C67E829953384 /* Pods-UITestPresentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationTests/Pods-UITestPresentationTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,22 +84,26 @@
 		C30073DD21F1538A00AD757E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B9464B22062D95008C234F /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		C3BAEDC022073B2F0060F30D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		C3BAEDC2220740A40060F30D /* ProfileCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell1.swift; sourceTree = "<group>"; };
-		C3BAEDC422074F7D0060F30D /* ProfileCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell2.swift; sourceTree = "<group>"; };
 		C3BAEDC622076AF70060F30D /* ChangeUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUsernameViewController.swift; sourceTree = "<group>"; };
 		C3BAEDC822076C300060F30D /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
-		C3F19B94220919C80058CEDE /* KIFTarget.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIFTarget.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3F19B96220919C80058CEDE /* KIFTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFTarget.swift; sourceTree = "<group>"; };
-		C3F19B98220919C80058CEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3F19B9E220919FD0058CEDE /* KIFTarget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIFTarget-Bridging-Header.h"; sourceTree = "<group>"; };
 		C3F19B9F22091B430058CEDE /* KIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F19BA1220929F40058CEDE /* KIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F386CB220A6E8500ED9E8F /* Pods_KIFTarget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_KIFTarget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0823F1BCEE1F88B2FF0C6C7 /* Pods_UITestPresentationKIFTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITestPresentationKIFTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B361EEE3B0B94AA39751AC /* Pods-UITestPresentationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationUITests/Pods-UITestPresentationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED3A7C1BA0BCF7BEBBD1EE7F /* Pods_KIFTarget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KIFTarget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D15A1ACC4D93F0A26F0D7B /* Pods-UITestPresentationKIFTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationKIFTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationKIFTests/Pods-UITestPresentationKIFTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		74DF7CE3220B7D4000D7C0F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC376577A12C48805FAAC62C /* Pods_UITestPresentationKIFTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C30073B521F1538800AD757E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,14 +128,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3F19B91220919C80058CEDE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3F386CC220A6E8500ED9E8F /* Pods_KIFTarget.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -141,8 +140,8 @@
 				AF99A1C5074C67E829953384 /* Pods-UITestPresentationTests.release.xcconfig */,
 				E0B361EEE3B0B94AA39751AC /* Pods-UITestPresentationUITests.debug.xcconfig */,
 				27520E63C4DCC2CF8C87FE2A /* Pods-UITestPresentationUITests.release.xcconfig */,
-				597F235B6D79DBF97240B7CA /* Pods-KIFTarget.debug.xcconfig */,
-				66A2DF3E9B1A2C28E3062ACE /* Pods-KIFTarget.release.xcconfig */,
+				F5D15A1ACC4D93F0A26F0D7B /* Pods-UITestPresentationKIFTests.debug.xcconfig */,
+				13430DB9D686EB9DB5DEA173 /* Pods-UITestPresentationKIFTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -157,8 +156,20 @@
 				49D04911B2CE4163A10190E9 /* Pods_UITestPresentationTests.framework */,
 				1465F948720FEF0F53EB47E0 /* Pods_UITestPresentationUITests.framework */,
 				ED3A7C1BA0BCF7BEBBD1EE7F /* Pods_KIFTarget.framework */,
+				E0823F1BCEE1F88B2FF0C6C7 /* Pods_UITestPresentationKIFTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74DF7CE7220B7D4000D7C0F3 /* UITestPresentationKIFTests */ = {
+			isa = PBXGroup;
+			children = (
+				74DF7CE8220B7D4000D7C0F3 /* ProfileViewControllerSpec.swift */,
+				74DF7CEA220B7D4000D7C0F3 /* Info.plist */,
+				74DF7CF0220B7D7000D7C0F3 /* UITestPresentationKIFTests-Bridging-Header.h */,
+				74DF7CF1220B897A00D7C0F3 /* XCTestCase+Extensions.swift */,
+			);
+			path = UITestPresentationKIFTests;
 			sourceTree = "<group>";
 		};
 		C30073AF21F1538800AD757E = {
@@ -167,7 +178,7 @@
 				C30073BA21F1538800AD757E /* UITestPresentation */,
 				C30073CF21F1538A00AD757E /* UITestPresentationTests */,
 				C30073DA21F1538A00AD757E /* UITestPresentationUITests */,
-				C3F19B95220919C80058CEDE /* KIFTarget */,
+				74DF7CE7220B7D4000D7C0F3 /* UITestPresentationKIFTests */,
 				C30073B921F1538800AD757E /* Products */,
 				037E188A5FAFA3C4876DC112 /* Pods */,
 				05157A055D5E8ED55CEE321A /* Frameworks */,
@@ -180,7 +191,7 @@
 				C30073B821F1538800AD757E /* UITestPresentation.app */,
 				C30073CC21F1538A00AD757E /* UITestPresentationTests.xctest */,
 				C30073D721F1538A00AD757E /* UITestPresentationUITests.xctest */,
-				C3F19B94220919C80058CEDE /* KIFTarget.xctest */,
+				74DF7CE6220B7D4000D7C0F3 /* UITestPresentationKIFTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,26 +268,34 @@
 			children = (
 				C3BAEDC022073B2F0060F30D /* ProfileViewController.swift */,
 				C3BAEDC822076C300060F30D /* ChangePasswordViewController.swift */,
-				C3BAEDC2220740A40060F30D /* ProfileCell1.swift */,
-				C3BAEDC422074F7D0060F30D /* ProfileCell2.swift */,
 				C3BAEDC622076AF70060F30D /* ChangeUsernameViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		C3F19B95220919C80058CEDE /* KIFTarget */ = {
-			isa = PBXGroup;
-			children = (
-				C3F19B96220919C80058CEDE /* KIFTarget.swift */,
-				C3F19B98220919C80058CEDE /* Info.plist */,
-				C3F19B9E220919FD0058CEDE /* KIFTarget-Bridging-Header.h */,
-			);
-			path = KIFTarget;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		74DF7CE5220B7D4000D7C0F3 /* UITestPresentationKIFTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74DF7CED220B7D4000D7C0F3 /* Build configuration list for PBXNativeTarget "UITestPresentationKIFTests" */;
+			buildPhases = (
+				809C3251F16DCF47ACDDEF6A /* [CP] Check Pods Manifest.lock */,
+				74DF7CE2220B7D4000D7C0F3 /* Sources */,
+				74DF7CE3220B7D4000D7C0F3 /* Frameworks */,
+				74DF7CE4220B7D4000D7C0F3 /* Resources */,
+				FA8FD903EF6793E3413B1C7C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74DF7CEC220B7D4000D7C0F3 /* PBXTargetDependency */,
+			);
+			name = UITestPresentationKIFTests;
+			productName = UITestPresentationKIFTests;
+			productReference = 74DF7CE6220B7D4000D7C0F3 /* UITestPresentationKIFTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C30073B721F1538800AD757E /* UITestPresentation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C30073E021F1538A00AD757E /* Build configuration list for PBXNativeTarget "UITestPresentation" */;
@@ -334,26 +353,6 @@
 			productReference = C30073D721F1538A00AD757E /* UITestPresentationUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		C3F19B93220919C80058CEDE /* KIFTarget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C3F19B9D220919C80058CEDE /* Build configuration list for PBXNativeTarget "KIFTarget" */;
-			buildPhases = (
-				070E5A2D0F883FBB0B3ADF4D /* [CP] Check Pods Manifest.lock */,
-				C3F19B90220919C80058CEDE /* Sources */,
-				C3F19B91220919C80058CEDE /* Frameworks */,
-				C3F19B92220919C80058CEDE /* Resources */,
-				96F57B3CAD1C4F731680D552 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C3F19B9A220919C80058CEDE /* PBXTargetDependency */,
-			);
-			name = KIFTarget;
-			productName = KIFTarget;
-			productReference = C3F19B94220919C80058CEDE /* KIFTarget.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -364,6 +363,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Mateus Marques";
 				TargetAttributes = {
+					74DF7CE5220B7D4000D7C0F3 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C30073B721F1538800AD757E;
+					};
 					C30073B721F1538800AD757E = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -372,10 +375,6 @@
 						TestTargetID = C30073B721F1538800AD757E;
 					};
 					C30073D621F1538A00AD757E = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = C30073B721F1538800AD757E;
-					};
-					C3F19B93220919C80058CEDE = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = C30073B721F1538800AD757E;
 					};
@@ -397,12 +396,19 @@
 				C30073B721F1538800AD757E /* UITestPresentation */,
 				C30073CB21F1538A00AD757E /* UITestPresentationTests */,
 				C30073D621F1538A00AD757E /* UITestPresentationUITests */,
-				C3F19B93220919C80058CEDE /* KIFTarget */,
+				74DF7CE5220B7D4000D7C0F3 /* UITestPresentationKIFTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		74DF7CE4220B7D4000D7C0F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C30073B621F1538800AD757E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,34 +432,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3F19B92220919C80058CEDE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		070E5A2D0F883FBB0B3ADF4D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KIFTarget-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4C87756869BD43603B213BC6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,22 +453,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		96F57B3CAD1C4F731680D552 /* [CP] Embed Pods Frameworks */ = {
+		809C3251F16DCF47ACDDEF6A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KIFTarget/Pods-KIFTarget-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KIF/KIF.framework",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF.framework",
+				"$(DERIVED_FILE_DIR)/Pods-UITestPresentationKIFTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KIFTarget/Pods-KIFTarget-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C3476FA921FDFC97009225BE /* Disable keyboard */ = {
@@ -540,21 +525,50 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FA8FD903EF6793E3413B1C7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UITestPresentationKIFTests/Pods-UITestPresentationKIFTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KIF/KIF.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UITestPresentationKIFTests/Pods-UITestPresentationKIFTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		74DF7CE2220B7D4000D7C0F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DF7CF2220B897A00D7C0F3 /* XCTestCase+Extensions.swift in Sources */,
+				74DF7CE9220B7D4000D7C0F3 /* ProfileViewControllerSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C30073B421F1538800AD757E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3BAEDC522074F7E0060F30D /* ProfileCell2.swift in Sources */,
 				C3BAEDC122073B2F0060F30D /* ProfileViewController.swift in Sources */,
 				C30073BE21F1538800AD757E /* MathViewController.swift in Sources */,
 				C3BAEDC922076C300060F30D /* ChangePasswordViewController.swift in Sources */,
 				745F421321F33DEA00C9EAB8 /* MathOperation.swift in Sources */,
 				745F421521F34AE000C9EAB8 /* OperationButton.swift in Sources */,
 				C3B9464C22062D95008C234F /* MainTabBar.swift in Sources */,
-				C3BAEDC3220740A40060F30D /* ProfileCell1.swift in Sources */,
 				C3BAEDC722076AF70060F30D /* ChangeUsernameViewController.swift in Sources */,
 				C30073BC21F1538800AD757E /* AppDelegate.swift in Sources */,
 			);
@@ -577,17 +591,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3F19B90220919C80058CEDE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3F19B97220919C80058CEDE /* KIFTarget.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		74DF7CEC220B7D4000D7C0F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30073B721F1538800AD757E /* UITestPresentation */;
+			targetProxy = 74DF7CEB220B7D4000D7C0F3 /* PBXContainerItemProxy */;
+		};
 		C30073CE21F1538A00AD757E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C30073B721F1538800AD757E /* UITestPresentation */;
@@ -597,11 +608,6 @@
 			isa = PBXTargetDependency;
 			target = C30073B721F1538800AD757E /* UITestPresentation */;
 			targetProxy = C30073D821F1538A00AD757E /* PBXContainerItemProxy */;
-		};
-		C3F19B9A220919C80058CEDE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C30073B721F1538800AD757E /* UITestPresentation */;
-			targetProxy = C3F19B99220919C80058CEDE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -617,6 +623,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		74DF7CEE220B7D4000D7C0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D15A1ACC4D93F0A26F0D7B /* Pods-UITestPresentationKIFTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UITestPresentationKIFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"KIF\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learning-spanish.UITestPresentationKIFTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UITestPresentationKIFTests/UITestPresentationKIFTests-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UITestPresentation.app/UITestPresentation";
+			};
+			name = Debug;
+		};
+		74DF7CEF220B7D4000D7C0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13430DB9D686EB9DB5DEA173 /* Pods-UITestPresentationKIFTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UITestPresentationKIFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"KIF\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learning-spanish.UITestPresentationKIFTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UITestPresentationKIFTests/UITestPresentationKIFTests-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UITestPresentation.app/UITestPresentation";
+			};
+			name = Release;
+		};
 		C30073DE21F1538A00AD757E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -828,6 +888,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = desafio.UITestPresentationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -849,6 +910,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = desafio.UITestPresentationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -857,63 +919,18 @@
 			};
 			name = Release;
 		};
-		C3F19B9B220919C80058CEDE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 597F235B6D79DBF97240B7CA /* Pods-KIFTarget.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2J623KG2G3;
-				INFOPLIST_FILE = KIFTarget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					"\"KIF\"",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = desafio.KIFTarget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "KIFTarget/KIFTarget-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(TEST_HOST)";
-			};
-			name = Debug;
-		};
-		C3F19B9C220919C80058CEDE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66A2DF3E9B1A2C28E3062ACE /* Pods-KIFTarget.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2J623KG2G3;
-				INFOPLIST_FILE = KIFTarget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					"\"KIF\"",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = desafio.KIFTarget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "KIFTarget/KIFTarget-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(TEST_HOST)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		74DF7CED220B7D4000D7C0F3 /* Build configuration list for PBXNativeTarget "UITestPresentationKIFTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DF7CEE220B7D4000D7C0F3 /* Debug */,
+				74DF7CEF220B7D4000D7C0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C30073B321F1538800AD757E /* Build configuration list for PBXProject "UITestPresentation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -946,15 +963,6 @@
 			buildConfigurations = (
 				C30073E721F1538A00AD757E /* Debug */,
 				C30073E821F1538A00AD757E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C3F19B9D220919C80058CEDE /* Build configuration list for PBXNativeTarget "KIFTarget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C3F19B9B220919C80058CEDE /* Debug */,
-				C3F19B9C220919C80058CEDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

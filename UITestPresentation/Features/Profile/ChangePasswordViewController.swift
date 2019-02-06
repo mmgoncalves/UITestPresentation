@@ -13,6 +13,6 @@ class ChangePasswordViewController: UIViewController {
 		super.viewDidLoad()
 		title = "Change Password"
 		view.backgroundColor = UIColor.blue
-		self.accessibilityLabel = title
+		view.accessibilityIdentifier = "changePasswordScreen"
 	}
 }

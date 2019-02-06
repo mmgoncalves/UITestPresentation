@@ -16,9 +16,10 @@ target 'UITestPresentation' do
     inherit! :search_paths
   end
 
-  target 'KIFTarget' do
+  target 'UITestPresentationKIFTests' do
     inherit! :search_paths
     pod 'KIF', '~> 3.7'
+    pod 'KIF/IdentifierTests'
   end
 
 end

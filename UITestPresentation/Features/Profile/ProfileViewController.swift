@@ -16,16 +16,19 @@ class ProfileViewController: UIViewController {
 		table.delegate = self
 		table.dataSource = self
 		table.separatorStyle = .none
-//		table.rowHeight = 30
+    table.accessibilityIdentifier = "ProfileViewController"
 		return table
 	}()
 
-	private let items = ["Change username", "Change password"]
+  typealias Item = (key: String, value: String)
+
+  private let items: [Item] = [
+    (key: "changeUsername", value: "Change username"),
+    (key: "changePassword", value: "Change password")
+    ]
 	
 	init() {
 		super.init(nibName: nil, bundle: nil)
-		tableView.register(ProfileCell1.self, forCellReuseIdentifier: "profilecell1")
-		tableView.register(ProfileCell2.self, forCellReuseIdentifier: "profilecell2")
 	}
 	
 	required init?(coder aDecoder: NSCoder) {
@@ -36,11 +39,6 @@ class ProfileViewController: UIViewController {
 		super.loadView()
 		view = tableView
 	}
-	
-	override func viewDidAppear(_ animated: Bool) {
-		super.viewDidAppear(animated)
-//		tableView.reloadData()
-	}
 }
 
 extension ProfileViewController: UITableViewDataSource {
@@ -49,20 +47,11 @@ extension ProfileViewController: UITableViewDataSource {
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let title = items[indexPath.row]
-		
-//		if indexPath.row == 0, let cell1 = tableView.dequeueReusableCell(withIdentifier: "profilecell1", for: indexPath) as? ProfileCell1 {
-//			cell1.setup(title: title)
-//			return cell1
-//		}
-//
-//		if indexPath.row == 1, let cell2 = tableView.dequeueReusableCell(withIdentifier: "profilecell2", for: indexPath) as? ProfileCell2 {
-//			cell2.setup(title: title)
-//			return cell2
-//		}
-		
+		let item = items[indexPath.row]
+
 		let cell = UITableViewCell()
-		cell.textLabel?.text = title
+		cell.textLabel?.text = item.value
+    cell.accessibilityIdentifier = item.key
 		return cell
 	}
 }
@@ -79,8 +68,4 @@ extension ProfileViewController: UITableViewDelegate {
 			navigationController?.pushViewController(changePasswordVC, animated: true)
 		}
 	}
-	
-//	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//		return 30
-//	}
 }
