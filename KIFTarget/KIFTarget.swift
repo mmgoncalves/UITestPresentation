@@ -9,17 +9,17 @@ import UIKit
 import XCTest
 @testable import UITestPresentation
 
-class KIFTarget: XCTestCase {
+class KIFTarget: KIFTestCase {
 
-	var sut: ProfileViewController!
-	var window: UIWindow!
+//	var sut: ProfileViewController!
+//	var window: UIWindow!
 	
     override func setUp() {
-		window = UIWindow(frame: UIScreen.main.bounds)
-		window.makeKeyAndVisible()
-		sut = ProfileViewController()
-		
-		window.rootViewController = sut
+//		window = UIWindow(frame: UIScreen.main.bounds)
+//		window.makeKeyAndVisible()
+//		sut = ProfileViewController()
+//
+//		window.rootViewController = sut
     }
 
     override func tearDown() {
@@ -27,7 +27,7 @@ class KIFTarget: XCTestCase {
     }
 
     func testExample() {
-		tester().tapRow(at: IndexPath(row: 0, section: 0), in: sut.tableView)
+//		tester().tapRow(at: IndexPath(row: 0, section: 0), in: sut.tableView)
 //		tester().waitForView(withAccessibilityLabel: "Change username")
     }
 

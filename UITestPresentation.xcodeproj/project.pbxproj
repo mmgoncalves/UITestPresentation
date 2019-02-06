@@ -26,7 +26,7 @@
 		C3BAEDC722076AF70060F30D /* ChangeUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC622076AF70060F30D /* ChangeUsernameViewController.swift */; };
 		C3BAEDC922076C300060F30D /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC822076C300060F30D /* ChangePasswordViewController.swift */; };
 		C3F19B97220919C80058CEDE /* KIFTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F19B96220919C80058CEDE /* KIFTarget.swift */; };
-		C3F19BA2220929F40058CEDE /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F19BA1220929F40058CEDE /* KIF.framework */; };
+		C3F386CC220A6E8500ED9E8F /* Pods_KIFTarget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F386CB220A6E8500ED9E8F /* Pods_KIFTarget.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +91,7 @@
 		C3F19B9E220919FD0058CEDE /* KIFTarget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIFTarget-Bridging-Header.h"; sourceTree = "<group>"; };
 		C3F19B9F22091B430058CEDE /* KIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F19BA1220929F40058CEDE /* KIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F386CB220A6E8500ED9E8F /* Pods_KIFTarget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_KIFTarget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B361EEE3B0B94AA39751AC /* Pods-UITestPresentationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationUITests/Pods-UITestPresentationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED3A7C1BA0BCF7BEBBD1EE7F /* Pods_KIFTarget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KIFTarget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -124,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3F19BA2220929F40058CEDE /* KIF.framework in Frameworks */,
+				C3F386CC220A6E8500ED9E8F /* Pods_KIFTarget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +150,7 @@
 		05157A055D5E8ED55CEE321A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C3F386CB220A6E8500ED9E8F /* Pods_KIFTarget.framework */,
 				C3F19BA1220929F40058CEDE /* KIF.framework */,
 				C3F19B9F22091B430058CEDE /* KIF.framework */,
 				720B090785C11EB25181EB17 /* Pods_UITestPresentation.framework */,
@@ -859,7 +861,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 597F235B6D79DBF97240B7CA /* Pods-KIFTarget.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUTS_DIR)/UITestPresentation.app/UITestPresentaion";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2J623KG2G3;
 				INFOPLIST_FILE = KIFTarget/Info.plist;
@@ -870,16 +872,15 @@
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
-					XCTest,
 					"-framework",
-					IOKit,
+					"\"KIF\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = desafio.KIFTarget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "KIFTarget/KIFTarget-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UITestPresentation.app/UITestPresentation";
+				TEST_HOST = "$(TEST_HOST)";
 			};
 			name = Debug;
 		};
@@ -887,7 +888,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 66A2DF3E9B1A2C28E3062ACE /* Pods-KIFTarget.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUTS_DIR)/UITestPresentation.app/UITestPresentaion";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2J623KG2G3;
 				INFOPLIST_FILE = KIFTarget/Info.plist;
@@ -898,16 +899,15 @@
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
-					XCTest,
 					"-framework",
-					IOKit,
+					"\"KIF\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = desafio.KIFTarget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "KIFTarget/KIFTarget-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UITestPresentation.app/UITestPresentation";
+				TEST_HOST = "$(TEST_HOST)";
 			};
 			name = Release;
 		};
