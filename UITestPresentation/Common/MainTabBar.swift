@@ -32,7 +32,11 @@ class MainTabBar: UITabBarController {
 		let profileViewController = ProfileViewController()
 		profileViewController.tabBarItem = profileItem
 		let profileNavigation = UINavigationController(rootViewController: profileViewController)
+
+    let repoListItem = UITabBarItem(tabBarSystemItem: UITabBarItem.SystemItem.downloads, tag: 2)
+    let repoListViewController = RepositoryListViewController()
+    repoListViewController.tabBarItem = repoListItem
 		
-		viewControllers = [mathViewController, profileNavigation]
+		viewControllers = [mathViewController, profileNavigation, repoListViewController]
 	}
 }

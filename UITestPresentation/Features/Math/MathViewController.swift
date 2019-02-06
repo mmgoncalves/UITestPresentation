@@ -112,12 +112,8 @@ class MathViewController: UIViewController {
 		fieldsStackView.addArrangedSubview(resultLabel)
 		view.addSubview(operationsStackView)
 		view.addSubview(button)
-	}
-	
-	override func viewDidAppear(_ animated: Bool) {
-		super.viewDidAppear(animated)
-		setupConstraints()
-		addOperationsButton()
+    setupConstraints()
+    addOperationsButton()
 	}
 	
 	@objc func action() {
