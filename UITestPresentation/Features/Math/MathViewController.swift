@@ -186,8 +186,8 @@ class MathViewController: UIViewController {
 			button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 			button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
 			button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
-			button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -40)
-//			button.topAnchor.constraint(equalTo: operationsStackView.bottomAnchor, constant: 40)
+//      button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -40)
+      button.topAnchor.constraint(equalTo: operationsStackView.bottomAnchor, constant: 40)
 			])
 	}
 }

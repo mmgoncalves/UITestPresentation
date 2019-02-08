@@ -22,4 +22,9 @@ target 'UITestPresentation' do
     pod 'KIF/IdentifierTests'
   end
 
+  target 'UITestPresentationEarlGreyTests' do
+    inherit! :search_paths
+    pod 'EarlGrey', '~> 1.14.0'
+  end
+
 end

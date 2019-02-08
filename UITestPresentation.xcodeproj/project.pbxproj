@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16D6663B816005A51D1AEA27 /* Pods_UITestPresentationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1465F948720FEF0F53EB47E0 /* Pods_UITestPresentationUITests.framework */; };
+		42A354E0D0BC28B552E960A3 /* EarlGrey.framework in EarlGrey Copy Files */ = {isa = PBXBuildFile; fileRef = 2E32CB4ABDE4B3160FD305B1 /* EarlGrey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		745F421321F33DEA00C9EAB8 /* MathOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F421221F33DEA00C9EAB8 /* MathOperation.swift */; };
 		745F421521F34AE000C9EAB8 /* OperationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F421421F34AE000C9EAB8 /* OperationButton.swift */; };
 		745F421721F5204300C9EAB8 /* MathOperationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F421621F5204300C9EAB8 /* MathOperationSpec.swift */; };
@@ -17,8 +18,10 @@
 		74DF7CF5220B90E800D7C0F3 /* RepositoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF7CF4220B90E800D7C0F3 /* RepositoryListViewController.swift */; };
 		74DF7CF7220C9A0D00D7C0F3 /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF7CF6220C9A0D00D7C0F3 /* RepoModel.swift */; };
 		74DF7CF9220C9A3D00D7C0F3 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF7CF8220C9A3D00D7C0F3 /* Webservice.swift */; };
+		74DF7D01220DAED100D7C0F3 /* UITestPresentationEarlGreyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF7D00220DAED100D7C0F3 /* UITestPresentationEarlGreyTests.swift */; };
 		7F86FD155EB8A917A2DD4689 /* Pods_UITestPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720B090785C11EB25181EB17 /* Pods_UITestPresentation.framework */; };
 		92594AEC36805EB0E78FD915 /* Pods_UITestPresentationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D04911B2CE4163A10190E9 /* Pods_UITestPresentationTests.framework */; };
+		99214F2932EB61B9B1849EAC /* Pods_UITestPresentationEarlGreyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A1E7FB2D903068F01E1B0D /* Pods_UITestPresentationEarlGreyTests.framework */; };
 		C30073BC21F1538800AD757E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30073BB21F1538800AD757E /* AppDelegate.swift */; };
 		C30073BE21F1538800AD757E /* MathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30073BD21F1538800AD757E /* MathViewController.swift */; };
 		C30073C321F1538A00AD757E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30073C221F1538A00AD757E /* Assets.xcassets */; };
@@ -28,11 +31,20 @@
 		C3BAEDC122073B2F0060F30D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC022073B2F0060F30D /* ProfileViewController.swift */; };
 		C3BAEDC722076AF70060F30D /* ChangeUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC622076AF70060F30D /* ChangeUsernameViewController.swift */; };
 		C3BAEDC922076C300060F30D /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC822076C300060F30D /* ChangePasswordViewController.swift */; };
+		C4FA7DEC51A01F4306EE3610 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2622B992D4171D772EBF399F /* EarlGrey.swift */; };
 		CC376577A12C48805FAAC62C /* Pods_UITestPresentationKIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0823F1BCEE1F88B2FF0C6C7 /* Pods_UITestPresentationKIFTests.framework */; };
+		DBC9E781A3151FFCD4A832E6 /* EarlGrey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E32CB4ABDE4B3160FD305B1 /* EarlGrey.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		74DF7CEB220B7D4000D7C0F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30073B021F1538800AD757E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30073B721F1538800AD757E;
+			remoteInfo = UITestPresentation;
+		};
+		74DF7D03220DAED100D7C0F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C30073B021F1538800AD757E /* Project object */;
 			proxyType = 1;
@@ -55,10 +67,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F413941152138C5763DF1804 /* EarlGrey Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(TEST_HOST)/../";
+			dstSubfolderSpec = 0;
+			files = (
+				42A354E0D0BC28B552E960A3 /* EarlGrey.framework in EarlGrey Copy Files */,
+			);
+			name = "EarlGrey Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		06A1E7FB2D903068F01E1B0D /* Pods_UITestPresentationEarlGreyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITestPresentationEarlGreyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13430DB9D686EB9DB5DEA173 /* Pods-UITestPresentationKIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationKIFTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationKIFTests/Pods-UITestPresentationKIFTests.release.xcconfig"; sourceTree = "<group>"; };
 		1465F948720FEF0F53EB47E0 /* Pods_UITestPresentationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITestPresentationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2622B992D4171D772EBF399F /* EarlGrey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
 		27520E63C4DCC2CF8C87FE2A /* Pods-UITestPresentationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationUITests/Pods-UITestPresentationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2DDC258AD15DAA13A5BBACB0 /* Pods-UITestPresentationEarlGreyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationEarlGreyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationEarlGreyTests/Pods-UITestPresentationEarlGreyTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E32CB4ABDE4B3160FD305B1 /* EarlGrey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EarlGrey.framework; path = Pods/EarlGrey/EarlGrey/EarlGrey.framework; sourceTree = SOURCE_ROOT; };
 		49D04911B2CE4163A10190E9 /* Pods_UITestPresentationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITestPresentationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFC6C3D8565F8230F564A84 /* Pods-UITestPresentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentation.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentation/Pods-UITestPresentation.release.xcconfig"; sourceTree = "<group>"; };
 		720B090785C11EB25181EB17 /* Pods_UITestPresentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITestPresentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +104,9 @@
 		74DF7CF4220B90E800D7C0F3 /* RepositoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewController.swift; sourceTree = "<group>"; };
 		74DF7CF6220C9A0D00D7C0F3 /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
 		74DF7CF8220C9A3D00D7C0F3 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		74DF7CFE220DAED100D7C0F3 /* UITestPresentationEarlGreyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestPresentationEarlGreyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DF7D00220DAED100D7C0F3 /* UITestPresentationEarlGreyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestPresentationEarlGreyTests.swift; sourceTree = "<group>"; };
+		74DF7D02220DAED100D7C0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7661B83B62E0E8512DE449F1 /* Pods-UITestPresentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentation/Pods-UITestPresentation.debug.xcconfig"; sourceTree = "<group>"; };
 		AD7108BD5180285B5CEA39EE /* Pods-UITestPresentationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationTests/Pods-UITestPresentationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF99A1C5074C67E829953384 /* Pods-UITestPresentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationTests/Pods-UITestPresentationTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +132,7 @@
 		E0B361EEE3B0B94AA39751AC /* Pods-UITestPresentationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationUITests/Pods-UITestPresentationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED3A7C1BA0BCF7BEBBD1EE7F /* Pods_KIFTarget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KIFTarget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D15A1ACC4D93F0A26F0D7B /* Pods-UITestPresentationKIFTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationKIFTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationKIFTests/Pods-UITestPresentationKIFTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCC4EA3840BF6B28790D06F4 /* Pods-UITestPresentationEarlGreyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationEarlGreyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationEarlGreyTests/Pods-UITestPresentationEarlGreyTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +141,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC376577A12C48805FAAC62C /* Pods_UITestPresentationKIFTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DF7CFB220DAED100D7C0F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99214F2932EB61B9B1849EAC /* Pods_UITestPresentationEarlGreyTests.framework in Frameworks */,
+				DBC9E781A3151FFCD4A832E6 /* EarlGrey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +191,8 @@
 				27520E63C4DCC2CF8C87FE2A /* Pods-UITestPresentationUITests.release.xcconfig */,
 				F5D15A1ACC4D93F0A26F0D7B /* Pods-UITestPresentationKIFTests.debug.xcconfig */,
 				13430DB9D686EB9DB5DEA173 /* Pods-UITestPresentationKIFTests.release.xcconfig */,
+				FCC4EA3840BF6B28790D06F4 /* Pods-UITestPresentationEarlGreyTests.debug.xcconfig */,
+				2DDC258AD15DAA13A5BBACB0 /* Pods-UITestPresentationEarlGreyTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -163,6 +208,8 @@
 				1465F948720FEF0F53EB47E0 /* Pods_UITestPresentationUITests.framework */,
 				ED3A7C1BA0BCF7BEBBD1EE7F /* Pods_KIFTarget.framework */,
 				E0823F1BCEE1F88B2FF0C6C7 /* Pods_UITestPresentationKIFTests.framework */,
+				06A1E7FB2D903068F01E1B0D /* Pods_UITestPresentationEarlGreyTests.framework */,
+				2E32CB4ABDE4B3160FD305B1 /* EarlGrey.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -188,6 +235,16 @@
 			path = RepositoryList;
 			sourceTree = "<group>";
 		};
+		74DF7CFF220DAED100D7C0F3 /* UITestPresentationEarlGreyTests */ = {
+			isa = PBXGroup;
+			children = (
+				74DF7D00220DAED100D7C0F3 /* UITestPresentationEarlGreyTests.swift */,
+				74DF7D02220DAED100D7C0F3 /* Info.plist */,
+				2622B992D4171D772EBF399F /* EarlGrey.swift */,
+			);
+			path = UITestPresentationEarlGreyTests;
+			sourceTree = "<group>";
+		};
 		C30073AF21F1538800AD757E = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +252,7 @@
 				C30073CF21F1538A00AD757E /* UITestPresentationTests */,
 				C30073DA21F1538A00AD757E /* UITestPresentationUITests */,
 				74DF7CE7220B7D4000D7C0F3 /* UITestPresentationKIFTests */,
+				74DF7CFF220DAED100D7C0F3 /* UITestPresentationEarlGreyTests */,
 				C30073B921F1538800AD757E /* Products */,
 				037E188A5FAFA3C4876DC112 /* Pods */,
 				05157A055D5E8ED55CEE321A /* Frameworks */,
@@ -208,6 +266,7 @@
 				C30073CC21F1538A00AD757E /* UITestPresentationTests.xctest */,
 				C30073D721F1538A00AD757E /* UITestPresentationUITests.xctest */,
 				74DF7CE6220B7D4000D7C0F3 /* UITestPresentationKIFTests.xctest */,
+				74DF7CFE220DAED100D7C0F3 /* UITestPresentationEarlGreyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -313,6 +372,27 @@
 			productReference = 74DF7CE6220B7D4000D7C0F3 /* UITestPresentationKIFTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		74DF7CFD220DAED100D7C0F3 /* UITestPresentationEarlGreyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74DF7D05220DAED100D7C0F3 /* Build configuration list for PBXNativeTarget "UITestPresentationEarlGreyTests" */;
+			buildPhases = (
+				B4E4A722FD5F3235D17F8F8D /* [CP] Check Pods Manifest.lock */,
+				74DF7CFA220DAED100D7C0F3 /* Sources */,
+				74DF7CFB220DAED100D7C0F3 /* Frameworks */,
+				74DF7CFC220DAED100D7C0F3 /* Resources */,
+				082AF67DA9635D94B47648C7 /* [CP] Embed Pods Frameworks */,
+				F413941152138C5763DF1804 /* EarlGrey Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74DF7D04220DAED100D7C0F3 /* PBXTargetDependency */,
+			);
+			name = UITestPresentationEarlGreyTests;
+			productName = UITestPresentationEarlGreyTests;
+			productReference = 74DF7CFE220DAED100D7C0F3 /* UITestPresentationEarlGreyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C30073B721F1538800AD757E /* UITestPresentation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C30073E021F1538A00AD757E /* Build configuration list for PBXNativeTarget "UITestPresentation" */;
@@ -384,6 +464,10 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = C30073B721F1538800AD757E;
 					};
+					74DF7CFD220DAED100D7C0F3 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C30073B721F1538800AD757E;
+					};
 					C30073B721F1538800AD757E = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -414,12 +498,20 @@
 				C30073CB21F1538A00AD757E /* UITestPresentationTests */,
 				C30073D621F1538A00AD757E /* UITestPresentationUITests */,
 				74DF7CE5220B7D4000D7C0F3 /* UITestPresentationKIFTests */,
+				74DF7CFD220DAED100D7C0F3 /* UITestPresentationEarlGreyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		74DF7CE4220B7D4000D7C0F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DF7CFC220DAED100D7C0F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -452,6 +544,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		082AF67DA9635D94B47648C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UITestPresentationEarlGreyTests/Pods-UITestPresentationEarlGreyTests-frameworks.sh",
+				"${PODS_ROOT}/EarlGrey/EarlGrey/EarlGrey.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EarlGrey.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UITestPresentationEarlGreyTests/Pods-UITestPresentationEarlGreyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4C87756869BD43603B213BC6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -486,6 +600,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-UITestPresentationKIFTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4E4A722FD5F3235D17F8F8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UITestPresentationEarlGreyTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -576,6 +712,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74DF7CFA220DAED100D7C0F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DF7D01220DAED100D7C0F3 /* UITestPresentationEarlGreyTests.swift in Sources */,
+				C4FA7DEC51A01F4306EE3610 /* EarlGrey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C30073B421F1538800AD757E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -618,6 +763,11 @@
 			isa = PBXTargetDependency;
 			target = C30073B721F1538800AD757E /* UITestPresentation */;
 			targetProxy = 74DF7CEB220B7D4000D7C0F3 /* PBXContainerItemProxy */;
+		};
+		74DF7D04220DAED100D7C0F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30073B721F1538800AD757E /* UITestPresentation */;
+			targetProxy = 74DF7D03220DAED100D7C0F3 /* PBXContainerItemProxy */;
 		};
 		C30073CE21F1538A00AD757E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -691,6 +841,46 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.learning-spanish.UITestPresentationKIFTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "UITestPresentationKIFTests/UITestPresentationKIFTests-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UITestPresentation.app/UITestPresentation";
+			};
+			name = Release;
+		};
+		74DF7D06220DAED100D7C0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCC4EA3840BF6B28790D06F4 /* Pods-UITestPresentationEarlGreyTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UITestPresentationEarlGreyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learning-spanish.UITestPresentationEarlGreyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UITestPresentation.app/UITestPresentation";
+			};
+			name = Debug;
+		};
+		74DF7D07220DAED100D7C0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DDC258AD15DAA13A5BBACB0 /* Pods-UITestPresentationEarlGreyTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UITestPresentationEarlGreyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learning-spanish.UITestPresentationEarlGreyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UITestPresentation.app/UITestPresentation";
@@ -947,6 +1137,15 @@
 			buildConfigurations = (
 				74DF7CEE220B7D4000D7C0F3 /* Debug */,
 				74DF7CEF220B7D4000D7C0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74DF7D05220DAED100D7C0F3 /* Build configuration list for PBXNativeTarget "UITestPresentationEarlGreyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DF7D06220DAED100D7C0F3 /* Debug */,
+				74DF7D07220DAED100D7C0F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
