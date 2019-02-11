@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		16D6663B816005A51D1AEA27 /* Pods_UITestPresentationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1465F948720FEF0F53EB47E0 /* Pods_UITestPresentationUITests.framework */; };
 		42A354E0D0BC28B552E960A3 /* EarlGrey.framework in EarlGrey Copy Files */ = {isa = PBXBuildFile; fileRef = 2E32CB4ABDE4B3160FD305B1 /* EarlGrey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		74022D642212364D00DEB5E0 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74022D632212364D00DEB5E0 /* EarlGrey.swift */; };
 		745F421321F33DEA00C9EAB8 /* MathOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F421221F33DEA00C9EAB8 /* MathOperation.swift */; };
 		745F421521F34AE000C9EAB8 /* OperationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F421421F34AE000C9EAB8 /* OperationButton.swift */; };
 		745F421721F5204300C9EAB8 /* MathOperationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F421621F5204300C9EAB8 /* MathOperationSpec.swift */; };
@@ -31,7 +32,6 @@
 		C3BAEDC122073B2F0060F30D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC022073B2F0060F30D /* ProfileViewController.swift */; };
 		C3BAEDC722076AF70060F30D /* ChangeUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC622076AF70060F30D /* ChangeUsernameViewController.swift */; };
 		C3BAEDC922076C300060F30D /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAEDC822076C300060F30D /* ChangePasswordViewController.swift */; };
-		C4FA7DEC51A01F4306EE3610 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2622B992D4171D772EBF399F /* EarlGrey.swift */; };
 		CC376577A12C48805FAAC62C /* Pods_UITestPresentationKIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0823F1BCEE1F88B2FF0C6C7 /* Pods_UITestPresentationKIFTests.framework */; };
 		DBC9E781A3151FFCD4A832E6 /* EarlGrey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E32CB4ABDE4B3160FD305B1 /* EarlGrey.framework */; };
 /* End PBXBuildFile section */
@@ -85,13 +85,13 @@
 		06A1E7FB2D903068F01E1B0D /* Pods_UITestPresentationEarlGreyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITestPresentationEarlGreyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13430DB9D686EB9DB5DEA173 /* Pods-UITestPresentationKIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationKIFTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationKIFTests/Pods-UITestPresentationKIFTests.release.xcconfig"; sourceTree = "<group>"; };
 		1465F948720FEF0F53EB47E0 /* Pods_UITestPresentationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITestPresentationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2622B992D4171D772EBF399F /* EarlGrey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
 		27520E63C4DCC2CF8C87FE2A /* Pods-UITestPresentationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationUITests/Pods-UITestPresentationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2DDC258AD15DAA13A5BBACB0 /* Pods-UITestPresentationEarlGreyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentationEarlGreyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentationEarlGreyTests/Pods-UITestPresentationEarlGreyTests.release.xcconfig"; sourceTree = "<group>"; };
 		2E32CB4ABDE4B3160FD305B1 /* EarlGrey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EarlGrey.framework; path = Pods/EarlGrey/EarlGrey/EarlGrey.framework; sourceTree = SOURCE_ROOT; };
 		49D04911B2CE4163A10190E9 /* Pods_UITestPresentationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITestPresentationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFC6C3D8565F8230F564A84 /* Pods-UITestPresentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITestPresentation.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITestPresentation/Pods-UITestPresentation.release.xcconfig"; sourceTree = "<group>"; };
 		720B090785C11EB25181EB17 /* Pods_UITestPresentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITestPresentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74022D632212364D00DEB5E0 /* EarlGrey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
 		745F421221F33DEA00C9EAB8 /* MathOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathOperation.swift; sourceTree = "<group>"; };
 		745F421421F34AE000C9EAB8 /* OperationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationButton.swift; sourceTree = "<group>"; };
 		745F421621F5204300C9EAB8 /* MathOperationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathOperationSpec.swift; sourceTree = "<group>"; };
@@ -238,9 +238,9 @@
 		74DF7CFF220DAED100D7C0F3 /* UITestPresentationEarlGreyTests */ = {
 			isa = PBXGroup;
 			children = (
+				74022D632212364D00DEB5E0 /* EarlGrey.swift */,
 				74DF7D00220DAED100D7C0F3 /* UITestPresentationEarlGreyTests.swift */,
 				74DF7D02220DAED100D7C0F3 /* Info.plist */,
-				2622B992D4171D772EBF399F /* EarlGrey.swift */,
 			);
 			path = UITestPresentationEarlGreyTests;
 			sourceTree = "<group>";
@@ -716,8 +716,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74022D642212364D00DEB5E0 /* EarlGrey.swift in Sources */,
 				74DF7D01220DAED100D7C0F3 /* UITestPresentationEarlGreyTests.swift in Sources */,
-				C4FA7DEC51A01F4306EE3610 /* EarlGrey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

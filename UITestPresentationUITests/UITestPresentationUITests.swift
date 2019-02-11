@@ -12,13 +12,11 @@ import XCTest
 class UITestPresentationUITests: XCTestCase {
 	
 	var app: XCUIApplication!
+
 	override func setUp() {
-		continueAfterFailure = false
+    continueAfterFailure = false
+    super.setUp()
 		app = XCUIApplication()
-	}
-	
-	override func tearDown() {
-		
 	}
 	
 	func testSum() {

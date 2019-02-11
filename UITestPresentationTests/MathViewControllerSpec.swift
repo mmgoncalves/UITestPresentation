@@ -15,7 +15,7 @@ final class MathViewControllerSpec: XCTestCase {
 
   override func setUp() {
     sut = MathViewController()
-	UIApplication.shared.delegate?.window??.rootViewController = sut
+    UIApplication.shared.delegate?.window??.rootViewController = sut
   }
 
   func testOperationButton() {

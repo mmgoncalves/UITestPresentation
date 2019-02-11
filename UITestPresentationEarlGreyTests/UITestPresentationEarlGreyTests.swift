@@ -8,6 +8,7 @@
 
 import XCTest
 import EarlGrey
+
 @testable import UITestPresentation
 
 class UITestPresentationEarlGreyTests: XCTestCase {

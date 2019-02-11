@@ -33,26 +33,6 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C30073CB21F1538A00AD757E"
-               BuildableName = "UITestPresentationTests.xctest"
-               BlueprintName = "UITestPresentationTests"
-               ReferencedContainer = "container:UITestPresentation.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C30073D621F1538A00AD757E"
-               BuildableName = "UITestPresentationUITests.xctest"
-               BlueprintName = "UITestPresentationUITests"
-               ReferencedContainer = "container:UITestPresentation.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "C3F19B93220919C80058CEDE"
                BuildableName = "KIFTarget.xctest"
                BlueprintName = "KIFTarget"
@@ -79,6 +59,26 @@
                ReferencedContainer = "container:UITestPresentation.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C30073CB21F1538A00AD757E"
+               BuildableName = "UITestPresentationTests.xctest"
+               BlueprintName = "UITestPresentationTests"
+               ReferencedContainer = "container:UITestPresentation.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C30073D621F1538A00AD757E"
+               BuildableName = "UITestPresentationUITests.xctest"
+               BlueprintName = "UITestPresentationUITests"
+               ReferencedContainer = "container:UITestPresentation.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
@@ -89,8 +89,6 @@
             ReferencedContainer = "container:UITestPresentation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "DYLD_INSERT_LIBRARIES"
@@ -98,6 +96,8 @@
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"

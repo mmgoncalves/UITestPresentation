@@ -15,7 +15,7 @@ protocol WebserviceProtocol: AnyObject {
 class Webservice: WebserviceProtocol {
 
   func request(completion: @escaping (Result<Data, AppError>) -> Void) {
-    guard let url = URL(string: "https://api.github.com/search/repositories?q=language:Swift&page=1") else {
+    guard let url = URL(string: "https://api.github.com/search/repositories?q=language:Swift&page=2&per_page=30") else {
       return completion(.error(.default))
     }
 
